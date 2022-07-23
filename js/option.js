@@ -7,8 +7,14 @@ $("#flipbook").turn("previous")
 //縮放
 $("#flipbook").turn("zoom",1) 
 
-//當前頁面
+//獲取當前頁數
 $("#flipbook").turn("page")
+
+//獲取總共頁數
+$("#flipbook").turn("pages")
+
+//翻到特定頁數
+$("#flipbook").turn("page", num);
 
 $("#flipbook").turn({
     width: 1024, //翻頁檢視的寬度
