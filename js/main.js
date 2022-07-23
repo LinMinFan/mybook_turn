@@ -35,10 +35,10 @@ $.get('https://soa.tainan.gov.tw/Api/Service/Get/0998fe9a-5ac7-4b44-bfa2-c40d8e3
 
 
 function home() {
-  $('#flipbook').turn('previous');
-  
   $("#flipbook").turn("page", 1);
-  
+  setTimeout(function () {
+    $('#flipbook').turn('size', 1024, 680);
+  }, 500)
 }
 
 

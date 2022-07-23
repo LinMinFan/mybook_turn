@@ -299,14 +299,12 @@ body{
   }
   
   .logo {
-    margin: 0;
+    position: relative;
+    transform: translateY(50%);
+    font-size: 50px;
+    color: #00bcd4;
   }
-  
-  .logo a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+    
   .container {
     padding-top: 60px;
   }
