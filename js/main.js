@@ -13,9 +13,9 @@ $.get('https://soa.tainan.gov.tw/Api/Service/Get/0998fe9a-5ac7-4b44-bfa2-c40d8e3
     </div></div>`)
     //console.log(start);
     for (let j = start; j < (end); j++) {
-      //console.log('j', j);
+      console.log('j', j);
       $(`#page${i}`).find(`.box${i}`).append(
-        `<div class="cardbox"><span class="cover" style="background-image:url(./img/bg${data[j]['Seq']}.png)"></span><div class="text"><div class="thd">${data[j]['區域']}</div><div class="tbd">${data[j]['名稱']}</div><div class="tft">${data[j]['周邊景點']}</div></div></div><div class="hidden">${data[j]['歷史']}</div>`
+        `<div class="cardbox"><span class="cover" style="background-image:url(./img/bg${j+1}.png)"></span><div class="text"><div class="tbd">${data[j]['名稱']}</div><div class="tft">${data[j]['周邊景點']}</div></div></div><div class="hidden">${data[j]['歷史']}</div>`
       );
     }
   }
